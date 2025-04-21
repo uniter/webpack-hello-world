@@ -4,24 +4,16 @@
     "description": "Example of using Uniter/PHPify with Webpack from the docs",
     "repository": {
         "type": "git",
-        "url": "https://github.com/uniter/webpack-hello-world"
-    },
-    "phpify": {
-        "phpToJS": {
-            "sync": true
-        }
+        "url": "git+https://github.com/uniter/webpack-hello-world"
     },
     "devDependencies": {
-        "babel-core": "^6.26.0",
-        "babel-loader": "^7.1.2",
-        "babel-preset-env": "^1.6.1",
-        "phpify": "^4.0.0",
-        "source-map-loader": "^0.2.3",
-        "transform-loader": "^0.2.4",
-        "webpack": "^3.10.0"
+        "babel-loader": "^10.0.0",
+        "webpack": "^5.99.6",
+        "webpack-cli": "^6.0.1",
+        "webpack-uniter-plugin": "^0.0.1"
     },
     "scripts": {
-        "build": "webpack --devtool source-map"
+        "build": "webpack --mode development --devtool source-map"
     },
     "license": "MIT"
 }
